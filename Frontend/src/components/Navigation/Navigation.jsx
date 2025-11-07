@@ -1,3 +1,7 @@
+import { AccountIcon } from "../Common/AccountIcon";
+import { CartIcon } from "../Common/CartIcon";
+import { Wishlist } from "../Common/Wishlist";
+
 const Navigation = () => {
   return (
     <nav className="flex items-center py-6 px-16 justify-between gap-20 custom-nav">
@@ -45,6 +49,25 @@ const Navigation = () => {
             />
           </div>
         </div>
+      </div>
+
+      {/* Action Items */}
+      <div className="flex flex-wrap items-center gap-4">
+        <ul className="flex gap-8 ">
+          <li>
+            <button>
+              <Wishlist />
+            </button>
+          </li>
+          <li>
+            <button>
+              <AccountIcon />
+            </button>
+          </li>
+          <li>
+            <CartIcon />
+          </li>
+        </ul>
       </div>
     </nav>
   );
